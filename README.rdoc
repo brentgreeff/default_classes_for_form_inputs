@@ -1,0 +1,29 @@
+= Default Classes for Form Inputs
+
+Yes, its every css monkeys wet dream come true.
+
+
+* Just use the rails form helpers
+
+      <%= f.text_field :something, :class => 'text' %>
+
+* But leave out the class
+      
+      <%= f.text_field :something %>
+      
+      <%= text_field_tag :something %>    (works too.)
+
+
+You get default classes for different inputs.
+      
+      'text' for type="text"
+      
+      'password text' for type="password"
+      
+      'submit' for type="submit"
+
+
+More coming...
+
+
+Copyright (c) 2009 [Brent Greeff], released under the MIT license
