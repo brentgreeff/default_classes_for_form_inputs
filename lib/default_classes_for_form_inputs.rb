@@ -43,8 +43,11 @@ module ActionView
       alias_method_chain :submit_tag, :default_class
       
       def text_field_tag_with_default_class(name, value = nil, options = {})
-        add_class_to_options_if_missing(options)
-    		options[:class] << 'text'
+        unless options['type'].eql? 'hidden'
+          add_class_to_options_if_missing(options)
+    		  options[:class] << 'text'
+    		end
+    		
     		text_field_tag_without_default_class(name, value, options)
       end
       
