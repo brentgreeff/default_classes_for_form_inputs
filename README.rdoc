@@ -1,8 +1,5 @@
 = Default Classes for Form Inputs
 
-Yes, its every css monkeys wet dream come true.
-
-
 * Just use the rails form helpers
 
       <%= f.text_field :something, :class => 'text' %>
