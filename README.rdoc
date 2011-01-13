@@ -1,5 +1,11 @@
 = Default Classes for Form Inputs
 
+== Install
+
+      gem install default_classes_for_form_inputs
+
+== Usage
+
 * Just use the rails form helpers
 
       <%= f.text_field :something, :class => 'text' %>
